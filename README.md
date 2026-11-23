@@ -355,6 +355,23 @@ If ClaudGPT is useful to you, starring the repository and sharing the bot helps 
 
 <br>
 
+<!-- ═══════════════════════════ DISCUSSIONS ═══════════════════════════ -->
+<a id="discussions"></a>
+
+## Discussions & Ideas
+
+Have an idea, question, suggestion, or feedback about ClaudGPT? Join the community discussions and help shape future improvements.
+
+<div align="center">
+
+<a href="https://github.com/DarkDragonsX/ClaudGPT/discussions/1"><img alt="Join ClaudGPT Discussions" src="https://img.shields.io/badge/Join_Discussions-Share_Your_Ideas-7C3AED?style=for-the-badge&logo=github&logoColor=white&labelColor=0B1220"></a>
+
+</div>
+
+Share feature ideas, ask questions, discuss improvements, and contribute constructive feedback.
+
+---
+
 <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
 <div align="center">
 
