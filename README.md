@@ -30,7 +30,10 @@
 <a href="#how-it-works">How It Works</a> &nbsp;·&nbsp;
 <a href="#commands">Commands</a> &nbsp;·&nbsp;
 <a href="#project-info">Project Info</a> &nbsp;·&nbsp;
-<a href="#official-access">Official Access</a>
+<a href="#official-access">Official Access</a> &nbsp;·&nbsp;
+<a href="#documentation">Documentation</a> &nbsp;·&nbsp;
+<a href="#faq">FAQ</a> &nbsp;·&nbsp;
+<a href="#arabic">العربية</a>
 
 </div>
 
@@ -39,77 +42,79 @@
 <!-- ═══════════════════════════ OVERVIEW ═══════════════════════════ -->
 <a id="overview"></a>
 
-## ✨ Overview
+## Overview
 
 **ClaudGPT** is an AI-powered assistant available through **Telegram**, designed to help users with information, content processing, creativity, and a variety of digital tasks.
 
 Built using **Python**, ClaudGPT combines multiple AI-powered capabilities within a single conversational interface, making it easier to interact with AI, process different types of content, and access useful tools directly through Telegram.
 
+**In short:** an AI chatbot for Telegram that chats, generates images, analyzes images, PDFs and code projects, converts text to speech, removes image backgrounds, and reads web pages. No app to install: open the bot and send `/start`.
+
 <!-- ═══════════════════════════ CAPABILITIES ═══════════════════════════ -->
 <a id="capabilities"></a>
 
-## ⚡ Capabilities
+## Capabilities
 
 Everything ClaudGPT can do, all inside one conversation.
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <b>💬 AI Conversation</b><br>
+      <b>AI Conversation</b><br>
       Interact with ClaudGPT through natural language, ask questions, explore ideas, and receive AI-generated responses across various topics.
     </td>
     <td width="50%" valign="top">
-      <b>🎨 Image Generation</b><br>
+      <b>Image Generation</b><br>
       Generate images from textual descriptions, allowing users to transform their ideas and descriptions into visual content.
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <b>👀 Image Analysis</b><br>
+      <b>Image Analysis</b><br>
       Upload images and ask the AI to interpret, analyze, describe, and understand their visual content.
     </td>
     <td width="50%" valign="top">
-      <b>📄 Document &amp; PDF Analysis</b><br>
+      <b>Document &amp; PDF Analysis</b><br>
       Submit documents and PDF files for AI-assisted reading, analysis, understanding, and content extraction.
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <b>💻 Project &amp; Code Analysis</b><br>
+      <b>Project &amp; Code Analysis</b><br>
       Submit programming projects and compressed archives for AI-assisted examination, understanding project structure, reviewing code, and identifying potential issues.
     </td>
     <td width="50%" valign="top">
-      <b>🎤 Voice &amp; Audio</b><br>
+      <b>Voice &amp; Audio</b><br>
       Interact with voice-related AI capabilities, including processing voice input and working with audio content.
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <b>🔊 Text-to-Speech</b><br>
+      <b>Text-to-Speech</b><br>
       Convert written text into spoken audio using AI-powered speech generation.
     </td>
     <td width="50%" valign="top">
-      <b>🪄 Background Removal</b><br>
+      <b>Background Removal</b><br>
       Remove backgrounds from supported images to help create cleaner visual assets.
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <b>🌐 Web Content Processing</b><br>
+      <b>Web Content Processing</b><br>
       Retrieve and analyze accessible webpage content, helping users understand, summarize, and explore information available online.
     </td>
     <td width="50%" valign="top">
-      <b>🤖 AI Agents</b><br>
+      <b>AI Agents</b><br>
       Access agent-based capabilities for tasks that require extended processing and multi-step AI interactions.
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <b>🧹 Conversation Management</b><br>
+      <b>Conversation Management</b><br>
       Manage AI conversations through available bot commands, including clearing conversation context and canceling ongoing operations.
     </td>
     <td width="50%" valign="top">
-      <b>🚀 Ready to try it?</b><br>
+      <b>Ready to try it?</b><br>
       Open <a href="https://t.me/TatsuLordbot">ClaudGPT on Telegram</a> and send <code>/start</code>.
     </td>
   </tr>
@@ -118,18 +123,18 @@ Everything ClaudGPT can do, all inside one conversation.
 <!-- ═══════════════════════════ HOW IT WORKS ═══════════════════════════ -->
 <a id="how-it-works"></a>
 
-## 🧭 How It Works
+## How It Works
 
 ClaudGPT lives entirely inside Telegram. Send a message, a file, or a command, and get the result back in the same chat.
 
 ```mermaid
 flowchart LR
-    U(["👤 You"]) -->|"message, file or command"| C["🤖 ClaudGPT"]
-    C --> A["💬 Converse"]
-    C --> B["🎨 Create"]
-    C --> D["🔍 Analyze"]
-    C --> E["🔊 Voice and Tools"]
-    A --> R(["✅ Result in your chat"])
+    U(["You"]) -->|"message, file or command"| C["ClaudGPT"]
+    C --> A["Converse"]
+    C --> B["Create"]
+    C --> D["Analyze"]
+    C --> E["Voice and Tools"]
+    A --> R(["Result in your chat"])
     B --> R
     D --> R
     E --> R
@@ -142,7 +147,7 @@ flowchart LR
     class A,B,D,E cap
 ```
 
-### 🚀 Getting Started
+### Getting Started
 
 1. **Open** the official bot: [t.me/TatsuLordbot](https://t.me/TatsuLordbot)
 2. **Send** `/start` to begin.
@@ -151,20 +156,20 @@ flowchart LR
 <!-- ═══════════════════════════ COMMANDS ═══════════════════════════ -->
 <a id="commands"></a>
 
-## 🧰 Telegram Commands
+## Telegram Commands
 
-| | Command | Description |
-|:-:|:--|:--|
-| 🚀 | `/start` | Start using ClaudGPT. |
-| 🆘 | `/help` | View available capabilities and assistance. |
-| 🧹 | `/clear` | Clear conversation context. |
-| ⛔ | `/cancel` | Cancel an ongoing operation. |
-| 🔊 | `/tts` | Convert text into spoken audio. |
-| 🪄 | `/rembg` | Remove the background from an image. |
-| 🎨 | `/image` | Generate AI images. |
-| 📦 | `/project` | Analyze a programming project or ZIP archive. |
-| ✅ | `/done` | Start reviewing submitted project files. |
-| 🤖 | `/agents` | Activate AI agent capabilities. |
+| Command | Description |
+|:--|:--|
+| `/start` | Start using ClaudGPT. |
+| `/help` | View available capabilities and assistance. |
+| `/clear` | Clear conversation context. |
+| `/cancel` | Cancel an ongoing operation. |
+| `/tts` | Convert text into spoken audio. |
+| `/rembg` | Remove the background from an image. |
+| `/image` | Generate AI images. |
+| `/project` | Analyze a programming project or ZIP archive. |
+| `/done` | Start reviewing submitted project files. |
+| `/agents` | Activate AI agent capabilities. |
 
 > [!TIP]
 > Send `/help` inside the bot at any time to see the available capabilities.
@@ -172,7 +177,7 @@ flowchart LR
 <!-- ═══════════════════════════ PROJECT INFO ═══════════════════════════ -->
 <a id="project-info"></a>
 
-## 🆔 Project Information
+## Project Information
 
 | Property | Details |
 |:--|:--|
@@ -185,7 +190,7 @@ flowchart LR
 <!-- ═══════════════════════════ OFFICIAL ACCESS ═══════════════════════════ -->
 <a id="official-access"></a>
 
-## 🔗 Official Access
+## Official Access
 
 <table>
   <tr>
@@ -201,15 +206,152 @@ flowchart LR
   </tr>
 </table>
 
+<!-- ═══════════════════════════ DOCUMENTATION ═══════════════════════════ -->
+<a id="documentation"></a>
+
+## Documentation
+
+Official policies and project documents. Select a button to open a document.
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="TERMS_OF_USE.md"><img alt="Terms of Use" src="https://img.shields.io/badge/Terms_of_Use-0088CC?style=for-the-badge&labelColor=0B1220"></a><br><br>
+      <b>شروط الاستخدام</b><br>
+      User rights, acceptable use, prohibited activities, and the possibility of service suspension.<br>
+      <sub>حقوق المستخدم، الاستخدام المقبول، المحظورات، وإمكانية إيقاف الخدمة.</sub>
+    </td>
+    <td width="50%" valign="top">
+      <a href="PRIVACY_POLICY.md"><img alt="Privacy Policy" src="https://img.shields.io/badge/Privacy_Policy-0088CC?style=for-the-badge&labelColor=0B1220"></a><br><br>
+      <b>سياسة الخصوصية</b><br>
+      The data collected, how it is processed, stored, and shared.<br>
+      <sub>البيانات التي تجمعها، كيفية معالجتها، تخزينها ومشاركتها.</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="DISCLAIMER.md"><img alt="Disclaimer" src="https://img.shields.io/badge/Disclaimer-0088CC?style=for-the-badge&labelColor=0B1220"></a><br><br>
+      <b>إخلاء المسؤولية</b><br>
+      The project's limits of responsibility, the accuracy of AI answers, and external services.<br>
+      <sub>حدود مسؤولية المشروع، دقة إجابات الذكاء الاصطناعي، والخدمات الخارجية.</sub>
+    </td>
+    <td width="50%" valign="top">
+      <a href="THIRD_PARTY_SERVICES.md"><img alt="Third-Party Services" src="https://img.shields.io/badge/Third--Party_Services-0088CC?style=for-the-badge&labelColor=0B1220"></a><br><br>
+      <b>الخدمات الخارجية</b><br>
+      The AI model providers and services in use.<br>
+      <sub>توضيح مزودي نماذج الذكاء الاصطناعي والخدمات المستخدمة.</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="SECURITY.md"><img alt="Security Policy" src="https://img.shields.io/badge/Security_Policy-0088CC?style=for-the-badge&labelColor=0B1220"></a><br><br>
+      <b>سياسة الأمان</b><br>
+      How to report issues and security vulnerabilities.<br>
+      <sub>طريقة الإبلاغ عن المشكلات والثغرات الأمنية.</sub>
+    </td>
+    <td width="50%" valign="top">
+      <a href="CHANGELOG.md"><img alt="Changelog" src="https://img.shields.io/badge/Changelog-0088CC?style=for-the-badge&labelColor=0B1220"></a><br><br>
+      <b>سجل التحديثات</b><br>
+      Documentation of features, changes, and fixes.<br>
+      <sub>توثيق الميزات والتغييرات والإصلاحات.</sub>
+    </td>
+  </tr>
+</table>
+
+<!-- ═══════════════════════════ FAQ ═══════════════════════════ -->
+<a id="faq"></a>
+
+## FAQ
+
+<details>
+<summary><b>What is ClaudGPT?</b></summary>
+<br>
+An AI-powered assistant on Telegram for conversation, image generation and analysis, document and PDF analysis, code and project review, voice, text-to-speech, background removal, and webpage processing.
+</details>
+
+<details>
+<summary><b>How do I start?</b></summary>
+<br>
+Open <a href="https://t.me/TatsuLordbot">t.me/TatsuLordbot</a> and send <code>/start</code>. Use <code>/help</code> to see everything available.
+</details>
+
+<details>
+<summary><b>Can ClaudGPT analyze a whole code project?</b></summary>
+<br>
+Yes. Use <code>/project</code> to submit a programming project or ZIP archive, then <code>/done</code> to start the review.
+</details>
+
+<details>
+<summary><b>Is the source code available in this repository?</b></summary>
+<br>
+No. This repository provides official project information and documentation. It does not serve as a public source-code repository.
+</details>
+
+<details>
+<summary><b>Are the AI answers always accurate?</b></summary>
+<br>
+No. AI output can be inaccurate or incomplete, so verify important information. See the <a href="DISCLAIMER.md">Disclaimer</a>.
+</details>
+
+<details>
+<summary><b>How is my data handled?</b></summary>
+<br>
+See the <a href="PRIVACY_POLICY.md">Privacy Policy</a> and <a href="THIRD_PARTY_SERVICES.md">Third-Party Services</a>. Avoid sending passwords, payment details, or highly sensitive information.
+</details>
+
+<details>
+<summary><b>How do I report a security issue?</b></summary>
+<br>
+Follow the steps in the <a href="SECURITY.md">Security Policy</a>.
+</details>
+
+<!-- ═══════════════════════════ ARABIC ═══════════════════════════ -->
+<a id="arabic"></a>
+
+## العربية
+
+<div dir="rtl" align="right">
+
+**ClaudGPT** مساعد ذكاء اصطناعي متاح عبر **تيليجرام**، يساعدك في المحادثة، توليد الصور وتحليلها، تحليل ملفات PDF والمستندات، مراجعة المشاريع البرمجية، تحويل النص إلى صوت، إزالة خلفية الصور، وقراءة صفحات الويب، كل ذلك داخل محادثة واحدة.
+
+**للبدء:** افتح البوت الرسمي [t.me/TatsuLordbot](https://t.me/TatsuLordbot) ثم أرسل `/start`. وللاطلاع على كل ما هو متاح أرسل `/help`.
+
+</div>
+
+<!-- ═══════════════════════════ SUPPORT ═══════════════════════════ -->
+<a id="support"></a>
+
+## Support the Project
+
+If ClaudGPT is useful to you, starring the repository and sharing the bot helps more people discover it.
+
+<div align="center">
+
+<a href="https://t.me/share/url?url=https%3A%2F%2Ft.me%2FTatsuLordbot&text=ClaudGPT%20-%20AI-powered%20assistant%20on%20Telegram"><img alt="Share on Telegram" src="https://img.shields.io/badge/Share_on-Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white&labelColor=0B1220"></a>
+<a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Ft.me%2FTatsuLordbot&text=ClaudGPT%20-%20AI-powered%20assistant%20on%20Telegram"><img alt="Share on X" src="https://img.shields.io/badge/Share_on-X-000000?style=for-the-badge&logo=x&logoColor=white&labelColor=0B1220"></a>
+<a href="https://wa.me/?text=ClaudGPT%20-%20AI-powered%20assistant%20on%20Telegram%20https%3A%2F%2Ft.me%2FTatsuLordbot"><img alt="Share on WhatsApp" src="https://img.shields.io/badge/Share_on-WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white&labelColor=0B1220"></a>
+
+</div>
+
+<!--
+  Optional, after you know your repository path (OWNER/REPO), add live badges here:
+
+  <a href="https://github.com/OWNER/REPO/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/OWNER/REPO?style=for-the-badge&labelColor=0B1220"></a>
+  <a href="https://github.com/OWNER/REPO/commits"><img alt="Last commit" src="https://img.shields.io/github/last-commit/OWNER/REPO?style=for-the-badge&labelColor=0B1220"></a>
+  <a href="https://star-history.com/#OWNER/REPO&Date"><img alt="Star History" src="https://api.star-history.com/svg?repos=OWNER/REPO&type=Date" width="600"></a>
+-->
+
 <!-- ═══════════════════════════ ABOUT ═══════════════════════════ -->
 <a id="about"></a>
 
-## 📌 About This Repository
+## About This Repository
 
 > [!IMPORTANT]
 > This repository represents the **official digital identity and documentation** of ClaudGPT.
 >
 > It is intended to provide official project information and documentation. It does **not** serve as a public source-code repository.
+
+<sub>**Topics:** telegram bot · ai assistant · ai chatbot · telegram ai · image generation · image analysis · pdf analysis · code review · text to speech · background removal · ai agents · python</sub>
 
 <br>
 
