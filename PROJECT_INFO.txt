@@ -1,0 +1,6 @@
+Open-source project | Original owner: Rad Lamine | https://github.com/RadLamine/ClaudGPT
+
+Entry point: main.py
+Feature modules: bot_modules/01_configuration.py through bot_modules/13_server.py
+Configuration template: .env.example
+Dependencies: requirements.txt

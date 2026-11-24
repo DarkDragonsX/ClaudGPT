@@ -1,0 +1,19 @@
+# Open-source project | Original owner: Rad Lamine | https://github.com/RadLamine/ClaudGPT
+pyTelegramBotAPI
+Flask
+python-dotenv
+groq
+requests
+Pillow
+imageio-ffmpeg
+pillow-heif
+pillow-avif-plugin
+arabic-reshaper
+python-bidi
+edge-tts
+PyMuPDF
+pypdf
+reportlab
+rembg
+PyYAML
+pyflakes
