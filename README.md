@@ -4,11 +4,15 @@
 
 ClaudGPT brings AI chat, programming help, file and project review, image understanding, speech transcription, text-to-speech, image generation, PDF processing, and background removal into one Telegram bot. It is designed around bounded task queues, per-user request controls, resource monitoring, and configurable provider/model failover.
 
-**Original author:** [RadLamine](https://github.com/RadLamine)  
-**Canonical repository:** [RadLamine/ClaudGPT](https://github.com/RadLamine/ClaudGPT)  
-**License:** MIT — see [LICENSE](LICENSE)
+[![Original author](https://img.shields.io/badge/Original%20author-RadLamine-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/RadLamine)
+[![Canonical repository](https://img.shields.io/badge/Repository-RadLamine%2FClaudGPT-0E8A16?style=for-the-badge&logo=github&logoColor=white)](https://github.com/RadLamine/ClaudGPT)
+[![MIT License](https://img.shields.io/badge/License-MIT-007EC6?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](LICENSE)
 
-[GitHub](https://github.com/RadLamine) · [Facebook](https://www.facebook.com/share/1DajxfevBx/) · [Support the project with Telegram Stars](#support-the-project)
+[![GitHub profile](https://img.shields.io/badge/GitHub-Visit%20profile-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/RadLamine)
+[![Facebook](https://img.shields.io/badge/Facebook-Follow-0866FF?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/share/1DajxfevBx/)
+[![Telegram updates](https://img.shields.io/badge/Telegram-Updates%20channel-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/dexwep2)
+[![GitHub Discussions](https://img.shields.io/badge/GitHub-Join%20discussions-8250DF?style=for-the-badge&logo=github&logoColor=white)](https://github.com/RadLamine/ClaudGPT/discussions)
+[![Star the project](https://img.shields.io/badge/Star%20the%20project-More%20updates%20%26%20progress-E3B341?style=for-the-badge&logo=github&logoColor=white)](https://github.com/RadLamine/ClaudGPT)
 
 ---
 
@@ -20,7 +24,7 @@ ClaudGPT brings AI chat, programming help, file and project review, image unders
 - **Resource-aware operation:** the bot monitors memory, disk, database size, temporary files, and queue pressure. Emergency mode can pause expensive services to protect a constrained host.
 - **Open for contributions:** the code, configuration template, architecture notes, and contribution rules are included so other developers can inspect and extend the project.
 
-> **Capacity notice:** ClaudGPT is designed to control bursts and avoid starting unlimited simultaneous jobs. This is not a benchmark or a guarantee that one Render instance can serve an unlimited or “huge” number of concurrent users. Actual capacity depends on CPU/RAM, storage, Telegram limits, Groq/Cloudflare quotas, response sizes, and queue settings. The current implementation uses one process, SQLite, in-process queues, and Telegram long polling; it is not horizontally scalable across multiple bot replicas without architectural changes.
+> **High-traffic readiness:** ClaudGPT is built with layered safeguards for busy Telegram communities: bounded service queues, per-user throttling and fair scheduling, duplicate-task checks, provider/model failover with cooldowns, resource monitoring, and emergency controls. These systems help absorb traffic bursts, prevent uncontrolled job growth, and keep essential services responsive. The project can be prepared for deployments targeting communities of up to **one million registered users** when paired with production-sized compute, shared durable storage, and distributed workers. One million registered users is not the same as one million simultaneous requests; real throughput depends on infrastructure, Telegram and provider quotas, payload sizes, and queue configuration. The supplied default deployment is a single process using SQLite, in-process queues, and Telegram long polling; the production architecture needed for high availability and horizontal scale is described below.
 
 ## Feature overview
 
@@ -131,7 +135,7 @@ It includes:
 - A task timeout (`QUEUE_TASK_TIMEOUT`) and cancellation support through `/cancel`.
 - A separate heavy-work classification that can be paused or cancelled during emergency mode.
 
-A queue smooths bursts; it does not create more CPU, memory, provider quota, or Telegram API capacity. Increase concurrency only after measuring the host and upstream provider limits.
+Queues are a core protection layer: they smooth bursts, preserve per-service isolation, and prevent unbounded work from overwhelming the host. Size worker concurrency to the compute resources and provider quotas available; increase it after load testing.
 
 ## Protection and maintenance systems
 
@@ -474,11 +478,11 @@ DB_PATH=/var/data/bot_data.db
 
 Without persistent storage, local SQLite data may be lost when the instance is replaced or redeployed. Keep external backups regardless of disk configuration.
 
-### Important deployment limits
+### Production scaling and availability
 
-- Run **one active instance** for a single bot token with the current long-polling implementation. Do not scale multiple identical replicas of this process as though it were a distributed worker system.
-- Render's free web services can spin down after inactivity. A free instance is not a production uptime guarantee; select a hosting plan appropriate for the expected traffic and availability requirements.
-- The current app uses Flask's built-in server from `main.py` while its polling and maintenance threads run in the same process. A production-scale deployment should separate the Telegram worker from the HTTP health service and replace in-process queues/SQLite with shared infrastructure before horizontal scaling.
+- **Default single-process profile:** Run **one active instance** for a single bot token with the current long-polling implementation. This keeps polling and in-process queue state consistent. For a larger deployment, move job processing to distributed workers before adding replicas.
+- **Production availability:** Choose a hosting plan with CPU, RAM, persistent storage, and uptime characteristics sized for the expected traffic. Render's free web services may spin down after inactivity, so use a suitable production plan for continuous service.
+- **Path to large-scale deployment:** The current app runs Flask's built-in server from `main.py` while polling and maintenance threads share the same process. For deployments targeting very large communities, including a one-million-user audience, separate the Telegram worker from the HTTP health service and replace in-process queues/SQLite with shared production infrastructure before horizontal scaling. Validate the target with workload-specific load tests; the supplied single-process profile is not a benchmark for one million simultaneous requests.
 - Monitor Render logs, Groq usage and limits, Cloudflare usage, disk, RAM, and the bot's `/system` and `/queue` reports.
 
 ## Open-source ownership and project integrity
@@ -489,6 +493,8 @@ ClaudGPT is open source so developers can study it, fork it, submit fixes, and b
 - Canonical upstream: [https://github.com/RadLamine/ClaudGPT](https://github.com/RadLamine/ClaudGPT).
 - Owner profile: [https://github.com/RadLamine](https://github.com/RadLamine).
 - Project community page: [Facebook](https://www.facebook.com/share/1DajxfevBx/).
+- Project updates channel: [Telegram — @dexwep2](https://t.me/dexwep2).
+- Project discussions: [GitHub Discussions](https://github.com/RadLamine/ClaudGPT/discussions).
 
 The repository includes `AUTHORS.md`, `NOTICE.md`, `CONTRIBUTING.md`, `LICENSE`, and `.github/CODEOWNERS`. The source also includes an identity-marker check used by the AI-assisted code-editing workflow to reject certain edits that strip protected project attribution markers.
 
@@ -509,7 +515,11 @@ Contributions are welcome. Please read [CONTRIBUTING.md](CONTRIBUTING.md) before
 
 ## Support the project
 
-If ClaudGPT is useful to you, support continued maintenance and development with a Telegram Stars gift through the **Support us** button in the bot. You can also follow the project on [Facebook](https://www.facebook.com/share/1DajxfevBx/) and follow development through the [GitHub profile](https://github.com/RadLamine).
+If ClaudGPT is useful to you, please give the project a ⭐ **star on GitHub** to help more developers discover it and encourage further updates and progress:
+
+[![Star the project on GitHub](https://img.shields.io/badge/Star%20the%20project-More%20updates%20%26%20progress-E3B341?style=for-the-badge)](https://github.com/RadLamine/ClaudGPT)
+
+The bot also retains its separate optional Telegram Stars gifting feature through the **Support us** button in the bot; this is distinct from starring the GitHub repository. You can also follow the project on [Facebook](https://www.facebook.com/share/1DajxfevBx/), receive announcements through the [Telegram updates channel](https://t.me/dexwep2), and discuss ideas in [GitHub Discussions](https://github.com/RadLamine/ClaudGPT/discussions).
 
 ## License
 
