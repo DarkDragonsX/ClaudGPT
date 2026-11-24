@@ -1,0 +1,134 @@
+ClaudGPT COMMUNITY SOURCE LICENSE
+Version 1.0 — 24 November 2026
+
+Copyright (c) 2026 Radlamine (Rad Lamine)
+Original project: ClaudGPT
+Original repository: https://github.com/RadLamine/ClaudGPT
+
+IMPORTANT STATUS
+This is a custom source-available license written for ClaudGPT. It is not an
+OSI-approved Open Source License. The mandatory-channel and attribution
+conditions below are additional restrictions. Do not describe this license as
+OSI-certified or as an OSI-compliant open-source license.
+
+1. DEFINITIONS
+
+"Work" means the ClaudGPT source code, modular files, documentation, diagrams,
+project-specific assets, and other material distributed by the original
+project repository, excluding third-party components governed by their own
+licenses.
+
+"Original Author" means Radlamine (Rad Lamine).
+
+"Original Channels" means the two channels embedded in the original source:
+@dexwep1 and @dexwep2, together with their corresponding official t.me URLs.
+
+"Modified Version" means a copy of the Work containing changes, extensions,
+translations, or other derivative material.
+
+2. PERMISSION GRANT
+
+Subject to continuous compliance with this License, the Original Author grants
+you a worldwide, non-exclusive, royalty-free license to use, run, study, copy,
+modify, create Modified Versions of, publish, and redistribute the Work and
+Modified Versions, including for commercial purposes.
+
+You may make changes to the project, build on it, host it, and distribute your
+own implementation. This permission does not transfer ownership of the original
+Work or authorize you to claim that you authored the original project.
+
+3. CONDITIONS OF USE AND REDISTRIBUTION
+
+Every use or redistribution of the Work or a Modified Version must satisfy all
+of the following conditions:
+
+3.1 AUTHORSHIP AND ATTRIBUTION
+
+(a) Preserve all existing copyright, author, repository, and license notices.
+(b) Include a complete copy of this License and the NOTICE.md file with every
+    redistributed copy or substantial portion of the Work.
+(c) Clearly identify the project as "ClaudGPT, originally created by Radlamine"
+    and include the original repository URL:
+    https://github.com/RadLamine/ClaudGPT
+(d) A Modified Version must state that it is modified or derived, identify its
+    maintainer, and retain the attribution to the Original Author.
+(e) You must not falsely claim to be the creator or original owner of ClaudGPT,
+    its original source code, or the original project materials. You must not
+    remove or conceal the attribution in order to mislead users or recipients.
+(f) You may identify your own contributions, but must distinguish them from
+    the original work of Radlamine.
+
+3.2 ORIGINAL CHANNELS AND SUBSCRIPTION REQUIREMENT
+
+(a) The Original Channels must remain present in the source and in any deployed
+    or redistributed version of the Work.
+(b) You must not delete, replace, rename, hide, disable, or redirect either
+    Original Channel, or alter its fixed identifier or official URL.
+(c) You must not remove, disable, weaken, or bypass the mandatory-subscription
+    check that requires eligible users to join the Original Channels.
+(d) The startup validation and membership-verification logic protecting the
+    Original Channels must remain active and operational.
+(e) Additional channels may be added, provided they do not replace or reduce
+    the requirement to subscribe to both Original Channels.
+
+3.3 NO MISREPRESENTATION
+
+You may rename your own Modified Version, but you must not present it as the
+original ClaudGPT release or imply that the Original Author endorses your
+changes. Do not use the Original Author's personal identity or accounts to
+mislead users about who operates a Modified Version.
+
+3.4 THIRD-PARTY COMPONENTS
+
+Third-party libraries, models, services, and assets are not relicensed by this
+License. You must comply with their respective terms and licenses.
+
+4. CONTRIBUTIONS
+
+Unless a separate written agreement says otherwise, contributors retain
+copyright in their own original contributions. By intentionally submitting a
+contribution for inclusion in the Work, the contributor grants the project and
+all recipients of the Work a perpetual, worldwide, non-exclusive, royalty-free
+license to use, reproduce, modify, display, and distribute that contribution
+under this License. The contributor confirms that they have the right to make
+that grant.
+
+5. TERMINATION
+
+The permissions in this License terminate automatically if you materially
+violate its conditions. If the violation is capable of being corrected, the
+Original Author may, but is not required to, restore permission after receiving
+satisfactory evidence that the violation has been fully corrected. Any
+provision that by its nature should survive termination will remain effective.
+
+6. NO WARRANTY
+
+THE WORK IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. YOU ARE RESPONSIBLE FOR
+EVALUATING, CONFIGURING, SECURING, AND OPERATING YOUR DEPLOYMENT.
+
+7. LIMITATION OF LIABILITY
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE ORIGINAL AUTHOR AND
+CONTRIBUTORS SHALL NOT BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY,
+WHETHER IN CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION
+WITH THE WORK OR ITS USE, MODIFICATION, OR DISTRIBUTION.
+
+8. RIGHTS NOT GRANTED
+
+No ownership of the Original Author's name, identity, accounts, trademarks,
+service marks, or unrelated materials is transferred under this License.
+Nothing in this License grants exclusive ownership over an abstract idea,
+concept, workflow, or general method. Copyright and other applicable laws
+control what can be protected.
+
+9. ENTIRE LICENSE
+
+This License describes the permissions granted by the Original Author for the
+Work. If a provision is unenforceable in a particular jurisdiction, it shall be
+limited only to the minimum extent necessary, and the remaining provisions
+shall continue to apply to the extent permitted by law.
+
+For permissions beyond these terms, contact the Original Author through the
+original repository or the contact channels published there.

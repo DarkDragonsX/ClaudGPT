@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use or adapt ClaudGPT, cite the original project and preserve the attribution required by LICENSE."
+title: "ClaudGPT"
+type: software
+authors:
+  - name: "Radlamine"
+    alias: "Rad Lamine"
+repository-code: "https://github.com/RadLamine/ClaudGPT"
+url: "https://github.com/RadLamine/ClaudGPT"
+abstract: "A modular Telegram AI assistant project with mandatory subscription checks, file and project workflows, and AI integrations."
+license: "LicenseRef-ClaudGPT-Community-Source-1.0"
+version: "1.0.0"
+date-released: "2026-11-24"
